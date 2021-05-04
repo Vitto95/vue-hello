@@ -6,6 +6,7 @@ const app = new Vue({
     surname: "Verdi",
     color: "",
     transform: "",
+    imageURL: "../assets/img/windows.jpg",
   },
   methods: {
     changeColor(classe) {

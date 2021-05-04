@@ -30,4 +30,8 @@
   text-transform: capitalize;
 }
 
+img {
+  width: 50%;
+  height: 50%;
+}
 /* /text transform */ ;
