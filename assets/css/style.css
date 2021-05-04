@@ -1,3 +1,5 @@
+/* global */
+
 * {
   margin: 0;
   padding: 0;
@@ -30,8 +32,57 @@
   text-transform: capitalize;
 }
 
-img {
+/* /text transform */
+
+/* app */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+#app h1 {
+  text-align: center;
+}
+
+#app .title,
+#app .inputs,
+#app .text,
+#app .buttons {
+  margin-bottom: 10px;
+}
+
+#app .buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+#app .images {
   width: 50%;
   height: 50%;
 }
-/* /text transform */ ;
+
+#app .images img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* /app */
+
+/* /global */

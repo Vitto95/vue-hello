@@ -6,20 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css custom -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>Hello Vue!</title>
   </head>
+
   <body>
+    <!-- app -->
     <div id="app">
-      <h1>{{message}}</h1>
-      <input type="text" v-model="name" />
-      <input type="text" v-model="surname" />
-      <p :class="color">Ciao {{name}} {{surname}}</p>
-      <button @click="changeColor('red')">change color</button>
-      <button @click="textTransform('upper')">Text Transform</button>
-      <img :src="imageURL" alt="" />
+      <div class="title">
+        <h1>{{message}}</h1>
+      </div>
+      <div class="inputs">
+        <input type="text" v-model="name" />
+        <input type="text" v-model="surname" />
+        <input
+          type="text"
+          placeholder="Inserisci un colore..."
+          @keyup.enter="changeColor('red')"
+        />
+      </div>
+      <div class="text">
+        <p :class="color">Ciao {{name}} {{surname}}</p>
+      </div>
+      <div class="buttons">
+        <button @click="changeColor('red')">change color</button>
+        <button @click="textTransform('upper')">Text Transform</button>
+      </div>
+      <div class="images">
+        <img :src="imageURL" alt="" />
+      </div>
     </div>
+
+    <!-- script -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
